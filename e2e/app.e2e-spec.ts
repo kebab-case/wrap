@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('poop App', () => {
+describe('wrap App', () => {
   let page: AppPage;
 
   beforeEach(() => {
