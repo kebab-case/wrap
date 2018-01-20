@@ -8,9 +8,62 @@
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
 }
 
+
 .card-content {
   display: block;
   padding: 14px 16px 14px;
   font-size: 14px;
   line-height: 14px;
+}
+
+.card-header {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.card-body {
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.card-image {
+  max-width: 100%;
+  margin-bottom: 14px;
+}
+
+.comment-input-container {
+  display: block;
+  position: relative;
+  flex-shrink: 1;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+}
+
+.comment-input-icon {
+  right: 9px;
+  top: 8px;  
+  margin-left: 0px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 13px;
+  text-align: center;
+  color: rgba(0,0,0,.2);
+}
+
+.comment-input {
+  display: block;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding-right: 30px;
+  padding-left: 9px;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
 }
