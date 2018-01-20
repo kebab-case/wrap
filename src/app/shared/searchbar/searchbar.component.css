@@ -2,17 +2,18 @@
   display: flex;
   position: relative;
   align-items: center;
-  padding: 0 8px;
   min-height: 44px;
   border-top: .55px solid transparent;
-  margin: 12px;
 }
 
 .searchbar-input-container {
   display: block;
-  width: 100%;
+  width: 95%;
   position: relative;
   flex-shrink: 1; 
+  margin-left: 12px;
+  margin-top: 7px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
 }
 
 .searchbar-search-icon {

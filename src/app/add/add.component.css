@@ -56,7 +56,8 @@ textarea {
   resize: none;
   display: block;
   overflow: hidden;
-  margin: 12px;
+  margin-left: 12px;
+  border: 0px;
   border-radius: 2px;
   width: calc(100% - 24px);  
   background: #fff;
