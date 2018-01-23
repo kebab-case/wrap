@@ -5,7 +5,7 @@
   border-radius: 2px;
   width: calc(100% - 24px);  
   background: #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  box-shadow: 0 1px 2px #d4d4d4;
 }
 
 
@@ -17,9 +17,18 @@
 }
 
 .card-header {
-  font-size: 16px;
-  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;  
   margin-bottom: 14px;
+}
+
+.card-header .header-name-label {
+  font-weight: 500;
+}
+
+.card-header .header-date-label {
+  color: #bbbbbb;
 }
 
 .card-body {
@@ -27,9 +36,20 @@
   margin-bottom: 14px;
 }
 
+.card-image, .card-yt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+  height: auto;
+}
+
 .card-image {
   max-width: 100%;
-  margin-bottom: 14px;
+}
+
+.card-yt {
+  width: 100%;
 }
 
 .comment-input-container {
@@ -37,7 +57,7 @@
   position: relative;
   flex-shrink: 1;
   width: 100%;
-  border: 1px solid rgba(0,0,0,.2);
+  border: 1px solid #d4d4d4;
   border-radius: 4px;
 }
 
@@ -50,7 +70,7 @@
   height: 14px;
   font-size: 13px;
   text-align: center;
-  color: rgba(0,0,0,.2);
+  color: #d4d4d4;
 }
 
 .comment-input {
