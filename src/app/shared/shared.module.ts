@@ -1,15 +1,19 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
+
 import { CardComponent } from './card/card.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
+import { FabComponent } from './fab/fab.component';
 
 @NgModule({
   declarations: [
     CardComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    FabComponent
   ],
   exports: [
     CardComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    FabComponent
   ]
 })
 export class SharedModule {
