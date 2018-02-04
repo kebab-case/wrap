@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 
 html, body {
@@ -45,6 +46,12 @@ textarea, input, button {
   outline: none;
 }
 
+input,
+textarea,
+[contenteditable] {
+  user-select: text;
+}
+
 .button {
   display: inline-block;
   position: relative;
@@ -66,8 +73,8 @@ textarea, input, button {
   font-size: 16px;
   color: #fff;
   background-color: #ff2d55;
-  margin: 4px 2px;
   padding: 0 10px;
+  height: 44px;
 }
 
 .button-inner {
@@ -92,4 +99,15 @@ textarea, input, button {
   pointer-events: none;
   top: 0;
   left: 0;
+}
+
+.button-block {
+  display: block;
+  clear: both;
+  width: 100%;
+  contain: strict;
+}
+
+.inner-container {
+  padding: 12px;
 }

@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ServiceWorkerModule } from '@angular/service-worker';
+
+import { environment } from './../environments/environment';
 
 import { TabsModule } from './tabs/tabs.module';
 import { SharedModule } from './shared/shared.module';
@@ -19,6 +22,7 @@ import { FavoritesComponent } from './favorites/favorites.component';
   ],
   imports: [
     BrowserModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     TabsModule,
     SharedModule.forRoot()
   ],
